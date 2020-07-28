@@ -1,0 +1,13 @@
+name: iOSWithUTProj
+options:
+  bundleIdPrefix: com.mothule
+
+targets:
+  iOSWithUTProj:
+    type: application
+    platform: iOS
+    sources: iOSWithUTProj
+  iOSWithUTProjTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: iOSWithUTProjTests
