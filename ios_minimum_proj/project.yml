@@ -1,0 +1,6 @@
+name: iOSMinimumProject
+targets:
+  iOSMinimumProject:
+    type: application
+    platform: iOS
+    sources: iOSMinimumProject
