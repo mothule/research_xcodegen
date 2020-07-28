@@ -1,4 +1,7 @@
 name: iOSMinimumProject
+options:
+  bundleIdPrefix: com.mothule
+
 targets:
   iOSMinimumProject:
     type: application
