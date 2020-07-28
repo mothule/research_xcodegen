@@ -3,7 +3,7 @@ options:
   bundleIdPrefix: com.mothule
 
 targets:
-  iOSWithUTProj:
+  iOSWithCarthageProj:
     type: application
     platform: iOS
     sources: iOSWithCarthageProj
@@ -12,4 +12,4 @@ targets:
     platform: iOS
     sources: iOSWithCarthageProjTests
     dependencies:
-      - target: iOSWithUTProj
+      - target: iOSWithCarthageProj
