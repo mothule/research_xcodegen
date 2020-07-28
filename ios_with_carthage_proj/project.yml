@@ -1,0 +1,15 @@
+name: iOSWithCarthageProj
+options:
+  bundleIdPrefix: com.mothule
+
+targets:
+  iOSWithUTProj:
+    type: application
+    platform: iOS
+    sources: iOSWithCarthageProj
+  iOSWithUTProjTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: iOSWithCarthageProjTests
+    dependencies:
+      - target: iOSWithUTProj
