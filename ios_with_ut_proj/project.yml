@@ -11,3 +11,5 @@ targets:
     type: bundle.unit-test
     platform: iOS
     sources: iOSWithUTProjTests
+    dependencies:
+      - target: iOSWithUTProj

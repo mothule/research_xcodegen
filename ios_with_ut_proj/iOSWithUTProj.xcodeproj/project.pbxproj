@@ -16,12 +16,22 @@
 		FB4BABDD1176562DF58D3FDC /* iOSWithUTProjTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF9BE23572C22E9734A83F8 /* iOSWithUTProjTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		33F4ABD7D6F64D9E3C6556EE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 51572A381E335C1666F6B469 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05CDB296E8E1F3CC08DA4061;
+			remoteInfo = iOSWithUTProj;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0DBBE05069D110F51675BFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0ED4DAF947C605332261B096 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1AF9BE23572C22E9734A83F8 /* iOSWithUTProjTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSWithUTProjTests.swift; sourceTree = "<group>"; };
 		570BF26FB0D6E6ABCE722337 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5EE0461DDA50215CECFA89B7 /* iOSWithUTProjTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = iOSWithUTProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE0461DDA50215CECFA89B7 /* iOSWithUTProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSWithUTProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		67F06A6A44E840680F5755DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9BF80A7F4399D1A3AC9F2A59 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B03905464781EA47FD4E5D28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +110,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				4B59B8BBA5AEF8569FA6E253 /* PBXTargetDependency */,
 			);
 			name = iOSWithUTProjTests;
 			productName = iOSWithUTProjTests;
@@ -113,14 +124,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = B41165FEBC235DC0E0C030D3 /* Build configuration list for PBXProject "iOSWithUTProj" */;
 			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				en,
 				Base,
 			);
 			mainGroup = 78C9331E9FD3CAC95485A51B;
@@ -166,6 +176,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4B59B8BBA5AEF8569FA6E253 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05CDB296E8E1F3CC08DA4061 /* iOSWithUTProj */;
+			targetProxy = 33F4ABD7D6F64D9E3C6556EE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7B65506ADB678440A73B674E /* LaunchScreen.storyboard */ = {
@@ -300,7 +318,6 @@
 		9BFCCD83F1758564EAFDC689 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iOSWithUTProjTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -332,7 +349,6 @@
 		AD74F16A1D4C7143ED45F1C5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = iOSWithUTProjTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
