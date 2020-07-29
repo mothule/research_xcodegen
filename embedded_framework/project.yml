@@ -5,4 +5,4 @@ targets:
   EmbeddedFramework:
     type: application
     platform: iOS
-    sources: CustomBuildConfig
+    sources: EmbeddedFramework
