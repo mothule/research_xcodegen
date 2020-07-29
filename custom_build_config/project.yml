@@ -1,0 +1,25 @@
+name: CustomBuildConfig
+options:
+  bundleIdPrefix: com.mothule
+configs:
+  Debug: debug
+  CI: debug
+  Beta: release
+  AppStore: release
+targets:
+  CustomBuildConfig:
+    type: application
+    platform: iOS
+    sources: CustomBuildConfig
+    settings:
+      configs:
+        CI:
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: [DEBUG, DISABLE_ASSERTION]
+
+schemes:
+  CustomBuildConfig:
+    build:
+      targets:
+        CustomBuildConfig: all
+    run:
+      config: CI
