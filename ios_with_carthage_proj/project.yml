@@ -7,9 +7,14 @@ targets:
     type: application
     platform: iOS
     sources: iOSWithCarthageProj
+    dependencies:
+      - carthage: Alamofire
+      - carthage: AlamofireImage
   iOSWithUTProjTests:
     type: bundle.unit-test
     platform: iOS
     sources: iOSWithCarthageProjTests
     dependencies:
       - target: iOSWithCarthageProj
+      - carthage: Quick
+      - carthage: Nimble
