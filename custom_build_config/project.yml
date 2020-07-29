@@ -15,11 +15,22 @@ targets:
       configs:
         CI:
           SWIFT_ACTIVE_COMPILATION_CONDITIONS: [DEBUG, DISABLE_ASSERTION]
+  CustomBuildConfigTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources: CustomBuildConfigTests
+    dependencies:
+      - target: CustomBuildConfig
 
 schemes:
   CustomBuildConfig:
     build:
       targets:
         CustomBuildConfig: all
-    run:
+        CustomBuildConfigTests: [test]
+    test:
+      targets:
+        - CustomBuildConfigTests
       config: CI
+      gatherCoverageData: true
+      
