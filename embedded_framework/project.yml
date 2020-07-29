@@ -6,3 +6,10 @@ targets:
     type: application
     platform: iOS
     sources: EmbeddedFramework
+    dependencies:
+      - target: Logic
+  Logic:
+    type: framework
+    platform: iOS
+    sources:
+      - path: Logic
