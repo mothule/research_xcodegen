@@ -1,0 +1,8 @@
+name: EmbeddedFramework
+options:
+  bundleIdPrefix: com.mothule
+targets:
+  EmbeddedFramework:
+    type: application
+    platform: iOS
+    sources: CustomBuildConfig
