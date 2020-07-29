@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import CustomBuildConfig
 
 class CustomBuildConfigTests: XCTestCase {
 
@@ -18,6 +19,7 @@ class CustomBuildConfigTests: XCTestCase {
     }
 
     func testExample() throws {
+        assert("hoge")
         XCTAssertTrue(true)
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
