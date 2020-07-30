@@ -1,0 +1,14 @@
+name: Settings
+options:
+  bundleIdPrefix: com.mothule
+settings:
+  SWIFT_ACTIVE_COMPILATION_CONDITIONS: [DEBUG, project_value]
+
+
+targets:
+  Settings:
+    type: application
+    platform: iOS
+    sources: Settings 
+    settings:
+      SWIFT_ACTIVE_COMPILATION_CONDITIONS: [DEBUG, target_value]
